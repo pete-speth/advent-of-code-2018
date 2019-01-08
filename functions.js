@@ -8,7 +8,7 @@ module.exports = {
     var inputs = content.split("\n");
 
     inputs = inputs.filter(function(el){
-      regex = /[\w\d]+/g;
+      regex = /[\w\d.#]+/g;
       return el.match(regex);
     });
 
